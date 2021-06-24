@@ -1,1 +1,135 @@
 /* You can add global styles to this file, and also import other style files */
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400&display=swap');/*user page*/
+.body{
+  background-color: #cf9acb;
+  width: 70%;
+  /* text-align: center; */
+  position: relative;
+  left: 200px;
+  box-shadow: 3px 4px 1px #9d528d;
+  padding: 25px 68px;
+  margin: 70px 0px;
+  border-radius: 8px;
+}
+/*user list page*/
+.all-users{
+  margin: 60px 0px;
+}
+.page{
+  background-color: #57124f;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.content{
+  font-size: 25px; 
+}
+
+.content th{
+  font-size: 30px; 
+}
+
+.content tbody{
+  border-bottom: 1px solid #b890b5;
+}
+.content thead{
+  color: #8f066e;
+}
+.title h2{
+  text-align: center;
+  color: #fff;
+  font-size: 42px;
+  letter-spacing: 4px;
+}
+/*Home*/
+.home{
+  margin: 170px 0px;
+  text-align: center;
+}
+
+.home .items{
+  width: 40%;
+  position: relative;
+  left: 400px;
+  margin: 50px 0px;
+  font-size: 20px;
+}
+.home .intro h2{
+  text-align: center;
+  color: #fff;
+  font-size: 42px;
+  letter-spacing: 4px
+}
+.home .intro h1{
+  text-align: center;
+  color: #fff;
+  font-size: 60px;
+}
+/*user details page*/
+.details{
+  margin-top: 100px;
+}
+.details img{
+  width: 300px;
+  height: 300px;
+  border-radius: 157px;
+  box-shadow: 0px 4px 6px 5px #723b6e;
+}
+.details h3{
+  color: #fff;
+  letter-spacing: 4px;
+  font-size: 36px;
+}
+.details  p{
+  color: #f64fe2;
+    letter-spacing: 3px;
+    font-size: 23px
+}
+.details ul{
+  margin: 22px 0px;
+}
+.details ul li{
+  padding: 20px 103px;
+  font-size: 20px;
+}
+.bg-primary {
+  background-color: #972d8b!important;
+}
+.links{
+  text-align: center;
+}
+.links button{
+  margin-right: 30px;
+}
+/*Error page*/
+.error{
+  position: absolute;
+  top: 456px;
+  left: 512px;
+}
+
+.error button{
+  padding: 10px 76px;
+  border: none;
+  font-size: 23px;
+  background-color: #9d0569;
+  border: 1px solid #fff;
+  border-radius: 28px;
+  word-spacing: 5px;
+  color: #fff;
+}
+
+/*home*/
+.items .row a{    
+  font-size: 80px;
+  color: #FFF;
+  margin-right: 36px;
+}
+
+.items .row a:hover{
+  font-size: 95px;
+  color: #9d0569;
+  background-color: #fff;
+  padding: 20px 5px;
+  border-radius: 10px;
+  transition: 0.7s;
+}

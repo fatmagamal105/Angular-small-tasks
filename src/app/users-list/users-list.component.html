@@ -1,0 +1,76 @@
+<div class="details">
+    <div class="container">
+      <div class="row" *ngFor="let user of users">
+        <div  class="col-lg-6">
+          <img src="https://expertphotography.com/wp-content/uploads/2018/10/cool-profile-pictures-retouching-1.jpg">
+        </div>
+        <div class="col-lg-6">
+          <h3>Student Profile</h3>
+          <p>Welcome to your profile : this is some info about you</p>
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              ID: 
+              <span class="badge bg-primary rounded-pill">{{ user.id}}</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Name:
+              <span class="badge bg-primary rounded-pill">{{user.name}}</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Age
+              <span class="badge bg-primary rounded-pill">{{ user.age}}</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Expected Salary
+              <span class="badge bg-primary rounded-pill">{{ user.salary}}</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="links">
+      <button class="btn btn-secondary" routerLink="/home"><i class="fas fa-backward"></i></button>
+      <button class="btn btn-secondary" routerLink="/users"><i class="fas fa-forward"></i></button>
+    </div>
+  </div>
+  
+  <!-- <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner"  *ngFor="let user of users">
+      <div class="carousel-item active" data-bs-interval="10000" >
+        <img src="https://expertphotography.com/wp-content/uploads/2018/10/cool-profile-pictures-retouching-1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  ID: 
+                  <span class="badge bg-primary rounded-pill">{{ user.id}}</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Name:
+                  <span class="badge bg-primary rounded-pill">{{user.name}}</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Age
+                  <span class="badge bg-primary rounded-pill">{{ user.age}}</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Expected Salary
+                  <span class="badge bg-primary rounded-pill">{{ user.salary}}</span>
+                </li>
+              </ul>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div> -->

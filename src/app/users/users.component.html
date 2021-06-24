@@ -1,0 +1,38 @@
+<div class="all-users">
+  <div class="title"> 
+    <h2>Students List 👨‍🎓</h2>
+  </div>
+  <div class="body">
+    <div class="content">
+      <div class="conatainer">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Salary</th>
+              <th>Details</th>
+              <!-- <th>Action</th> -->
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let user of users">
+              <td>{{user.id}}</td>
+              <td>{{user.name}}</td>
+              <td>{{ user.age}}</td>
+              <td>{{ user.salary}}</td>
+              <td><a routerLink="/user-details/{{user.id}}" class="link-success nav-link" >Details <i class="fas fa-forward"></i></a></td>
+               <td>
+                <!-- <button value ="Delete" class="btn btn-danger" >Delete</button> -->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <button class="btn btn-secondary" routerLink="/home"><i class="fas fa-backward"></i></button>
+    </div>
+  </div>
+</div>
+
+
+
